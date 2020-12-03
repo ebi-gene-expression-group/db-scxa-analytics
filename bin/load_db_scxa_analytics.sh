@@ -20,7 +20,7 @@ postgres_scripts_dir=$scriptDir/../postgres_routines
 dbConnection=${dbConnection:-$1}
 EXP_ID=${EXP_ID:-$2}
 EXPERIMENT_MATRICES_PATH=${EXPERIMENT_MATRICES_PATH:-$3}
-EXPRESSION_TYPE=${EXPRESSION_TYPE:-"expression_tpm"}
+EXPRESSION_TYPE=${EXPRESSION_TYPE:-"aggregated_filtered_normalised_counts"}
 
 # Check that necessary environment variables are defined.
 [ -z ${dbConnection+x} ] && echo "Env var dbConnection for the database connection needs to be defined. This includes the database name." && exit 1
